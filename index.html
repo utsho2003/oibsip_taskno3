@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+</body>
+<script src="script.js"></script>
+
+</html><div class="body">
+    <div class="container">
+        <div class="input-container">
+            <!-- input -->
+            <div class="input_box">
+                <input type="number" name="tin" id="in" placeholder="Enter the Temperature">
+            </div>
+            <!-- input type -->
+            <div class="radio">
+                <input type="radio" value="c" name="rin" id="rin1" onclick="updateINC(1)">
+                <label for="rin1">&deg;C</label>
+                <input type="radio" value="f" name="rin" id="rin2" onclick="updateINC(2)">
+                <label for="rin2">&deg;F</label>
+                <input type="radio" value="k" name="rin" id="rin3" onclick="updateINC(3)">
+                <label for="rin3">K</label>
+            </div>
+        </div>
+        <div class="output-container">
+            <!-- input -->
+            <div class="output_box">
+                <input type="text" name="tout" id="out">
+            </div>
+            <!-- input type -->
+            <div class="radio">
+                <input type="radio" value="c" name="rout" id="rout1" onclick="updateOUTC(1)">
+                <label for="rout1">&deg;C</label>
+                <input type="radio" value="f" name="rout" id="rout2" onclick="updateOUTC(2)">
+                <label for="rout2">&deg;F</label>
+                <input type="radio" value="k" name="rout" id="rout3" onclick="updateOUTC(3)">
+                <label for="rout3">K</label>
+            </div>
+        </div>
+        <div class="btn_container">
+            <button class="btn" id="cnvrt" onclick="cal()">convert</button>
+            <button class="btn" id="rst" type="reset" onclick="reset()">reset</button>
+        </div>
+    </div>
+</div>
